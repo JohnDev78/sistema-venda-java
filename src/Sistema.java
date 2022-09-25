@@ -84,8 +84,7 @@ public class Sistema {
 
 		mostrarProdutos();
 
-		System.out.print("Insira o id do produto: ");
-		int idSelecionado = Integer.parseInt(input.nextLine());
+		int idSelecionado = pedirInteiro("Insira o id do produto: ");
 
 		Produto prodSelecionado = null;
 
@@ -179,8 +178,7 @@ public class Sistema {
 		System.out.print("\nInsira o valor do produto: ");
 		double valor = Double.parseDouble(input.nextLine());
 
-		System.out.print("\nInsira a quantidade contida em estoque: ");
-		int qtdEstoque = Integer.parseInt(input.nextLine());
+		int qtdEstoque = pedirInteiro("\nInsira a quantidade contida em estoque: ");
 
 		Produto prod1 = new Produto(id, nome, valor, qtdEstoque);
 
