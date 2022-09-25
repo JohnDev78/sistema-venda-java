@@ -14,6 +14,14 @@ public class Sistema {
 	public static void main(String[] args) {
 
 		login();
+
+		produtos.add(new Produto(1, "Requeijão", 4.0, 5));
+		produtos.add(new Produto(2, "Feijão", 12.0, 5));
+		produtos.add(new Produto(5, "Chocolate", 6.0, 5));
+		produtos.add(new Produto(6, "Nutella", 8.5, 5));
+		produtos.add(new Produto(7, "Macarrão", 4.0, 5));
+		produtos.add(new Produto(9, "Queijo", 24.0, 5));
+
 		menu();
 
 	}
